@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        // put your cecky here
+        Funguje to?
         ?>
     </body>
 </html>
