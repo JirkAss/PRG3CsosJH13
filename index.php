@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        // put your code here
+        // put your cecky here
         ?>
     </body>
 </html>
