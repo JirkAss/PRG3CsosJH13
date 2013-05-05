@@ -1,3 +1,11 @@
+<html>
+    <body>
+    <head>
+    <title>Přihlašení uživatele</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/css1.css">
+    </head>
+
 <?php
 if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, jinak budete přesměrování na stránku pro registraci nového uživatele
 
@@ -68,3 +76,5 @@ if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, j
     
 } else { header("Location: ".$_SERVER['SERVER_ROOT']."registration.php"); }
 ?>
+    </body>
+</html>

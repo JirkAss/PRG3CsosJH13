@@ -4,15 +4,8 @@
 <head>
     <title>Registrace</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" >
+    <link rel="stylesheet" type="text/css" href="css/css1.css">
 
-<style>
-
-.back{
-    font-size:10pt; 
-    margin-top:20px;
-}
-
-</style>
     
 </head>
 
@@ -38,7 +31,7 @@
 
 </form>
 
-<div class="back"> <a href="index.php">přihlásit se</a></div>
+<div class="reg"> <a href="index.php">přihlásit se</a></div>
     
 </body>
 </html>
