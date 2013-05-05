@@ -26,7 +26,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 //V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
  echo '<div id="form">';
  echo "
- <h1>Přihlaste se</h1>
+ <h1>Přihlašte se</h1>
  <form action=\"overeni.php\" method=\"POST\">
 <!--  overeni.php je skript pro ověření zadaných dat, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou POST  -->
 
