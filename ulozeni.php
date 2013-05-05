@@ -1,7 +1,7 @@
 <html>
     <body>
     <head>
-    <title>Přihlašení uživatele</title>
+    <title>Uložení</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/css1.css">
     </head>
