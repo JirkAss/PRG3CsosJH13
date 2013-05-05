@@ -7,7 +7,7 @@ session_start();
 <head>
     <title>Přihlašení uživatele</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/css1.css">
+    <link rel="stylesheet" type="text/css" href="web/css/css1.css">
 </head>
 
 <body>
