@@ -10,7 +10,7 @@ class controller
     public function ukazLogin()
     {
        extract($this->data);
-       require_once '../view/sabLogin.php';
+       require_once '../src/view/sabLogin.php';
     }
 }
 ?>
