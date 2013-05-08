@@ -7,6 +7,6 @@ $DBPASS = '9412251453';
 $DB = 'potmesil';
 
 $link = mysql_connect($DBSERVER,$DBUSER,$DBPASS) or die ('Nemůžu se připojit');
-mysql_select_db($DB,$link) or die ('I cannot select DB');
+mysql_select_db($DB,$link) or die ('Nelze vybrat databázi');
 mysql_query("SET NAMES utf8");
 ?>
