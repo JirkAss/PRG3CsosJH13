@@ -69,7 +69,7 @@ if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, j
             $q2 = mysql_query("INSERT INTO `user`(`nickname`,`e-mail`,`password`) VALUES('".$nickname."','".$mail."','".$password."')");
             if(!$q2) { echo mysql_error() . ' - ' . mysql_errno(); }
             else {
-                echo "Děkuji za registraci, teď se můžete <a href=\"index.php\">přihlásit</a>.";
+                echo "Děkujeme za registraci, nyní se můžete <a href=\"index.php\">přihlásit</a>.";
             }
         }
     }
