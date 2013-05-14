@@ -1,11 +1,6 @@
-<html>
-    <body>
-    <head>
-       <title>Ověření</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/css1.css"> 
-    </head>
 <?php
+class overeni
+{
 session_start();
 //Celý postup funguje na sessions. Právě v session se ukládají data uživatele, zatímco se nacházi na stránkach. Je důležite spustit sessions na začátku stránky!  
  
@@ -74,6 +69,5 @@ if(isset($_POST['go'])){
     }
     
 } else { header("Location: ".$_SERVER['SERVER_ROOT']."index.php"); }
+}
 ?>
-</body>  
-</html>
