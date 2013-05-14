@@ -30,7 +30,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
  <form action=\"overeni.php\" method=\"POST\">
 <!--  overeni.php je skript pro ověření zadaných dat, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou POST  -->
 
-    <div><label for=\"nickname\">nickname:</label></div>
+    <div><label for=\"nickname\">Nickname:</label></div>
     <div><input type=\"text\" name=\"nickname\"></div>
 <!--  Do textového pole se jménem login ( name=\"nickname\" ) uživatel zadá svůj login  -->
 
@@ -45,7 +45,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 </div>
  ";  
  echo '</div>';
- echo '<div class="reg"><a href="registration.php">registrace</a></div>'; 
+ echo '<div class="reg"><a href="registration.php">Registrace</a></div>'; 
 }
 ?>
 </body>
