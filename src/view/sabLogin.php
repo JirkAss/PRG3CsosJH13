@@ -10,7 +10,7 @@
         <link href="css/css1.css" rel="stylesheet" type="text/css" />
         
         
-        <title>Login Pyčo</title>
+        <title>Login</title>
     </head>
     <body>
         <div id="hrana">
