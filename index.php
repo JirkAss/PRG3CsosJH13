@@ -28,7 +28,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
  echo "
  <h1>Přihlašte se</h1>
  <form action=\"overeni.php\" method=\"POST\">
-<!--  overeni.php je skript pro ověření zadaných dat, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou POST  -->
+<!--  overeni.php je skript pro ověření zadaných dat, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou POST -->
 
     <div><label for=\"nickname\">Nickname:</label></div>
     <div><input type=\"text\" name=\"nickname\"></div>
