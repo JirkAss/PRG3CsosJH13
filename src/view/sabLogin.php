@@ -15,21 +15,25 @@
     <body>
         <div id="hrana">
             <strong>Toto je šablona Loginu sabLogin.php</strong>
+            <div id="wrapper">
+          
          <h1>Přihlašte se</h1>
  <form action=\"overeni.php\" method=\"POST\">
 <!--  overeni.php je skript pro ověření zadaných dat, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou POST  -->
 
-    <div><label for=""nickname">nickname:</label></div>
-    <div><input type="text" name=\"nickname\"></div>
+    <span><label for=""nickname">Uživatelské jméno:</label></span>
+    <span><input type="text" name=\"nickname\"></span>
 <!--  Do textového pole se jménem login ( name=\"nickname\" ) uživatel zadá svůj login  -->
-
-    <div><label for="password">Heslo:</label></div>
-    <div><input type="password" name=\"password\"></div>
+    <br />
+    <span><label for="password">Heslo:</label></span>
+    <span><input type="password" name=\"password\"></span>
 <!--  Do pole se jménem heslo ( name=\"password\" ) uživatel zadá svoje heslo  -->
 
     <div><input type="submit" name=\"go\" value=\"Login\"></div>
 <!--  tlačítko ( type=\"submit\" ) odesíla data do souboru overeni.php  -->
 <a href="#openModal"><i>Chci se registrovat</i></a>
+            </div>
+         
 
 <div id="openModal" class="modalDialog">
 	<div>

@@ -1,6 +1,22 @@
 * {   
 color: black;
 }
+#wrapper{
+    background: #00ff00;
+    background: -moz-linear-gradient(#00ff00, #ffff00);
+    background: -webkit-linear-gradient(#00ff00, #ffff00);
+    background: -o-linear-gradient(#00ff00, #ffff00);
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    padding-top: 50px;
+}
+
 
 
 .reg{
@@ -34,7 +50,8 @@ color: black;
 }
 
 .modalDialog > div {
-	width: 400px;
+	width: 458px;
+        height: 300px;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
