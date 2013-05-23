@@ -1,6 +1,4 @@
 <?php
-class reg {
-
 if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, jinak budete přesměrování na stránku pro registraci nového uživatele
 
     if(isset($_POST['nickname']))
@@ -49,7 +47,7 @@ if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, j
 
 
 //Vložíme soubor s připojením k databázi. ( musí se nacházet ve stejné složce )    
-    require_once 'db.php';
+    require_once '../model/db.php';
 
 //Ověřujeme, zda jíž není uživatel se stejným loginem    
     $q1 = mysql_query("SELECT * FROM `user` WHERE `e-mail`='".$mail."'");
@@ -63,11 +61,12 @@ if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, j
             $q2 = mysql_query("INSERT INTO `user`(`nickname`,`e-mail`,`password`) VALUES('".$nickname."','".$mail."','".$password."')");
             if(!$q2) { echo mysql_error() . ' - ' . mysql_errno(); }
             else {
-                echo "Děkujeme za registraci, nyní se můžete <a href=\"index.php\">přihlásit</a>.";
+               /* echo "Děkujeme za registraci, nyní se můžete <a href=\"index.php\">přihlásit</a>.";*/
+                header("Location: ".$_SERVER['SERVER_ROOT']."../../web/thxReg.php");
+                
             }
         }
     }
     
-} else { header("Location: ".$_SERVER['SERVER_ROOT']."registration.php"); }
-}
+} else { header("Location: ".$_SERVER['SERVER_ROOT']."../../web/login.php"); }
 ?>

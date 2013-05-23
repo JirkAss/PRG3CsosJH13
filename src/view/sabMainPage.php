@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <!-- Šablona je IN PROGRESS (J) -->
 <html>
@@ -15,7 +18,28 @@
 
     <body>
         <div id="hornilista">
-            <center><b>Tady budou informace o přihlášeným uživateli</b></center>
+            <!-- ####################################################### -->
+            
+                    <!-- Tady budou údaje o uživateli -->
+                    <?php
+//ověřujeme zda proměnné jméno a id jsou prázde nebo ne
+if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
+{
+//V případě, že nejsou tak zobrazime jméno uživatele a odkaz, který je schovaný, jesli uživatel není přihlášený
+ 
+ echo "<strong>".$_SESSION['nickname']."</strong>"; 
+ 
+ echo '         <span class="logout"><a href="../src/controller/logout.php">Logout</a></span>';
+ 
+} else {
+//V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
+ echo '<span class prihl><a href="login.php">Přihlaste se</a></span>';
+ 
+ echo '<span class="reg"><a href="registration.php">Registrace</a></span>'; 
+}
+?>
+            
+            <!-- ####################################################### -->
         </div>
         <strong>Toto je šablona Hlavního vzhledu sabMainPage.php</strong>
         

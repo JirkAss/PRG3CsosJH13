@@ -1,10 +1,10 @@
 <?php
 
-$DBSERVER = '172.16.1.204';
-$DBUSER = 'potmesil';
-$DBPASS = '9412251453';
+$DBSERVER = '127.0.0.1';
+$DBUSER = 'kor3k';
+$DBPASS = 'y11tbJSjl';
 
-$DB = 'potmesil';
+$DB = 'forum';
 
 $link = mysql_connect($DBSERVER,$DBUSER,$DBPASS) or die ('Nemůžu se připojit');
 mysql_select_db($DB,$link) or die ('Nelze vybrat databázi');

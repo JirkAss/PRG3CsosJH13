@@ -15,32 +15,34 @@
     <body>
         <div id="hrana">
             <strong>Toto je šablona Loginu sabLogin.php</strong>
+      
             <div id="wrapper">
           
          <h1>Přihlašte se</h1>
- <form action=\"overeni.php\" method=\"POST\">
+        <form action="../src/controller/overeni.php" method="POST">
 <!--  overeni.php je skript pro ověření zadaných dat, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou POST  -->
 
     <div><label for="nickname">Uživatelské jméno:</label></div>
-    <div><input type="text" name=\"nickname\"></div>
+    <div><input type="text" name="nickname"></div>
 <!--  Do textového pole se jménem login ( name=\"nickname\" ) uživatel zadá svůj login  -->
     <br />
     <div><label for="password">Heslo:</label></div>
-    <div><input type="password" name=\"password\"></div>
+    <div><input type="password" name="password"></div>
 <!--  Do pole se jménem heslo ( name=\"password\" ) uživatel zadá svoje heslo  -->
 
-    <div><input type="submit" name=\"go\" value=\"Login\"></div>
+    <div><input type="submit" name="go" value="Přihlásit se"></div>
 <!--  tlačítko ( type=\"submit\" ) odesíla data do souboru overeni.php  -->
 <a href="#openModal"><i>Chci se registrovat</i></a>
             </div>
+</form>
          
 
 <div id="openModal" class="modalDialog">
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
-		<strong>Toto je šablona Registrace sabReg.php</strong>
+		
         <h1>Registrace nového uživatele</h1>
-        <form action="ulozeni.php" method="POST">
+        <form action="../src/controller/ulozeni.php" method="POST">
 <!--  pridavani.php je skript pro přidávaní nových uživatelů do databáze, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou $_POST  -->
     
         <div>

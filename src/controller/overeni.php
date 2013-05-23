@@ -1,9 +1,5 @@
 <?php
-class overeni
-{
 session_start();
-//Celý postup funguje na sessions. Právě v session se ukládají data uživatele, zatímco se nacházi na stránkach. Je důležite spustit sessions na začátku stránky!  
- 
 if(isset($_POST['go'])){
 //jestli tlačítko bylo zmačknuté tak jdi dál, jinak budete přesměrování na stránku pro registraci nového uživatele
     
@@ -36,11 +32,12 @@ if(isset($_POST['go'])){
 //V případě, že jakákoli proměnná je prázdna, zastavíme skript a zobrazime hlášení        
     if(empty($nickname) or empty($password))
     {
+      
         exit("Vyplňte všechna pole");
     }
 
 //Vložíme soubor s připojením k databázi. ( musí se nacházet ve stejné složce )        
-    require_once 'db.php';
+    require_once '../model/db.php';
 
 //Ověřime, zda máme záznam v tabulce s zadaným loginem    
     $q1 = mysql_query("SELECT `id_user` FROM `user` WHERE `nickname`='".$nickname."'");
@@ -60,7 +57,7 @@ if(isset($_POST['go'])){
                 $_SESSION['id_user'] = $r2['id_user'];
                 $_SESSION['nickname'] = $r2['nickname'];
 //Budete přesměrování na hlavní stránku
-                header("Location: index.php");
+                header("Location: ../../web/index.php");
             }
         } else {
 //Jinak zobrazime hlášení
@@ -68,6 +65,6 @@ if(isset($_POST['go'])){
         }
     }
     
-} else { header("Location: ".$_SERVER['SERVER_ROOT']."index.php"); }
-}
+} else { header("Location: ".$_SERVER['SERVER_ROOT']."web/login.php"); }
+
 ?>

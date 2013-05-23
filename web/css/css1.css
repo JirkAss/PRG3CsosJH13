@@ -1,8 +1,7 @@
-* {   
-color: orange;
-}
+
 body {
     background-color: black;
+    color: orange;
 }
 #wrapper{
     background: #00ff00;
@@ -34,7 +33,7 @@ body {
 }
 
 .modalDialog {
-	/*position: fixed;*/ /* <<<< To tu má být, ale funguje jen v Chrome*/
+	 /* <<<< To tu má být, ale funguje jen v Chrome*/
 	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
 	right: 0;
@@ -93,5 +92,8 @@ body {
     border: 0px;
    
     
+}
+.prihl {
+
 }
 
