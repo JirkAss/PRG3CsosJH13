@@ -21,12 +21,12 @@
  <form action=\"overeni.php\" method=\"POST\">
 <!--  overeni.php je skript pro ověření zadaných dat, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou POST  -->
 
-    <span><label for=""nickname">Uživatelské jméno:</label></span>
-    <span><input type="text" name=\"nickname\"></span>
+    <div><label for="nickname">Uživatelské jméno:</label></div>
+    <div><input type="text" name=\"nickname\"></div>
 <!--  Do textového pole se jménem login ( name=\"nickname\" ) uživatel zadá svůj login  -->
     <br />
-    <span><label for="password">Heslo:</label></span>
-    <span><input type="password" name=\"password\"></span>
+    <div><label for="password">Heslo:</label></div>
+    <div><input type="password" name=\"password\"></div>
 <!--  Do pole se jménem heslo ( name=\"password\" ) uživatel zadá svoje heslo  -->
 
     <div><input type="submit" name=\"go\" value=\"Login\"></div>

@@ -17,5 +17,10 @@ class controller
         extract($this->data);
         require_once '../src/view/sabReg.php';
     }
+    public function ukazMain()
+    {
+        extract($this->data);
+        require_once '../src/view/sabMainPage.php';
+    }
 }
 ?>
