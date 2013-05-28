@@ -30,7 +30,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
  echo "<strong>".$_SESSION['nickname']."</strong>"; 
  
  echo '         <span class="logout"><a href="../src/controller/logout.php">Logout</a></span>';
- 
+ echo '<a href="rozhrani.php">Uživatelské Rozhraní</a>';
 } else {
 //V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
  echo '<span class prihl><a href="login.php">Přihlaste se</a></span>';

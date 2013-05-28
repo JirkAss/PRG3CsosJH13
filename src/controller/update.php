@@ -1,4 +1,5 @@
 <?php
+require_once '../bootstrap.php';
 if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, jinak budete přesměrování na stránku pro registraci nového uživatele
 
     if(isset($_POST['nickname']))
@@ -58,7 +59,7 @@ if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, j
             exit("Uživatelské jméno je obsazené, vyberte si jiné");
         } else {
 //V případě, že není tak vložíme data o novém uživateli do databáze
-            $q2 = mysql_query("INSERT INTO `user`(`nickname`,`e-mail`,`password` ) VALUES('".$nickname."','".$mail."','".$password."')");
+            $q2 = mysql_query("UPDATE  `user` SET 'nickname' = .$nickname., 'e-mail'= .$mail. , 'password '= .$password. WHERE 'id_user' = {$_SESSION['id_user']} ");
             if(!$q2) { echo mysql_error() . ' - ' . mysql_errno(); }
             else {
                /* echo "Děkujeme za registraci, nyní se můžete <a href=\"index.php\">přihlásit</a>.";*/

@@ -22,5 +22,18 @@ class controller
         extract($this->data);
         require_once '../src/view/sabMainPage.php';
     }
+    
+        public function ukazThxReg()
+    {
+        extract($this->data);
+        require_once '../src/view/sabThxReg.php';
+    }
+    
+         public function ukazRozhrani()
+    {
+        extract($this->data);
+        require_once '../src/view/sabRozhrani.php';
+    }
+    
 }
 ?>
