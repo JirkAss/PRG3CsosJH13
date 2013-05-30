@@ -27,10 +27,10 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 {
 //V případě, že nejsou tak zobrazime jméno uživatele a odkaz, který je schovaný, jesli uživatel není přihlášený
  
- echo "<strong>".$_SESSION['nickname']."</strong>"; 
+ echo "Ahoj <strong>".$_SESSION['nickname']."</strong>"; 
  
- echo '         <span class="logout"><a href="../src/controller/logout.php">Logout</a></span>';
- echo '<a href="rozhrani.php">Uživatelské Rozhraní</a>';
+ echo '         <span class="logout"><a href="../src/controller/logout.php">Logout </a></span>';
+ echo '<span><a href="rozhrani.php">Uživatelské Rozhraní</a></span>';
 } else {
 //V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
  echo '<span class prihl><a href="login.php">Přihlaste se</a></span>';
@@ -38,6 +38,10 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
  echo '<span class="reg"><a href="registration.php">Registrace</a></span>'; 
 }
 ?>
+                    <span class="link">
+                        <a href="newtopic.php">Nové téma</a>
+                    </span>
+                    <span><a href="/PRG3CsosJH134/web/index.php">Domů</a></span>
             
             <!-- ####################################################### -->
         </div>
@@ -47,4 +51,4 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
             
         </div>
         
-    </body>
+   

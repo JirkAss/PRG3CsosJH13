@@ -35,5 +35,10 @@ class controller
         require_once '../src/view/sabRozhrani.php';
     }
     
+        public function ukaznewTopic()
+    {
+        extract($this->data);
+        require_once '../src/view/sabNewTopic.php';
+    }
 }
 ?>

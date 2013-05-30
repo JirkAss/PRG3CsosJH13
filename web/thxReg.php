@@ -9,4 +9,5 @@ $test =   new controller();
 $view = $test->ukazThxReg();
 
 echo $view;
+echo '</body></html>';
 ?>

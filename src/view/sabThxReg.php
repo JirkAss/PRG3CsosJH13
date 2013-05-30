@@ -9,7 +9,3 @@
     <Body>
         <h1> Děkujeme za registraci</h1>
         <p>Budete přesměrováni automaticky<p>
-    </Body>
-    
-    
-</html>

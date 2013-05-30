@@ -51,6 +51,3 @@
 </form>
 
 <div class="reg"> <a href="index.php">přihlásit se</a></div>
-    
-</body>
-</html>

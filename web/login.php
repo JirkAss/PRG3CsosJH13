@@ -9,5 +9,5 @@ $test =   new controller();
 $view = $test->ukazLogin();
 
 echo $view;
-
+echo '</body></html>';
 ?>
