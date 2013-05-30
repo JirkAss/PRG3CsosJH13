@@ -14,7 +14,7 @@
         <strong>Toto je šablona Registrace sabReg.php</strong>
         <h1>Registrace nového uživatele</h1>
         <form action="ulozeni.php" method="POST">
-<!--  pridavani.php je skript pro přidávaní nových uživatelů do databáze, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou $_POST  -->
+<!--  ulozeni.php je skript pro přidávaní nových uživatelů do databáze, tzn. po klíknutí na tlačítko Ok se data pošlou do tohoto souboru metodou $_POST  -->
     
         <div>
             <label for="nickname">Nickname:</label>
@@ -32,7 +32,7 @@
         <div>
             <input type="text" name="e-mail">
         </div>
-<!--  Do textového pole se jménem login ( name="e-mail" ) nový uživatel zadá svůj e-mail  -->
+<!--  Do textového pole se jménem email ( name="e-mail" ) nový uživatel zadá svůj e-mail  -->
     
         <div>
             <label for="password">Heslo:</label>
