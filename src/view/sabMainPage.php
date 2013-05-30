@@ -26,8 +26,6 @@ session_start();
 if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 {
 //V případě, že nejsou tak zobrazime jméno uživatele a odkaz, který je schovaný, jesli uživatel není přihlášený
- echo'Nickname: ';
- echo " <strong>"  .$_SESSION['nickname']."</strong>"; 
  
  echo "Ahoj <strong>".$_SESSION['nickname']."</strong>"; 
  
