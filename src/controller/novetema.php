@@ -1,25 +1,6 @@
 <?php
 
-class novetema
-{
-    private $repository;
-    private $pdo;
-    
-    public function __construct()
-    {        
-        $this->pdo    =   new \PDO(
-                                'mysql:host=localhost;dbname=forum', 
-                                'kor3k', 
-                                'y11tbJSjl', 
-                                array(
-                                        \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
-                                    )
-                               );         
-        
-        $this->repository   =   new UserRepository( $this->pdo );
-    }
-}
-if(isset($_POST['submit'])){
+if(isset($_POST['sub'])){
     
     
     
@@ -27,7 +8,7 @@ if(isset($_POST['submit'])){
          
     {
         $nazevtematu = stripslashes(htmlspecialchars(trim($_POST['nazevtematu'])));
-        if($name == '')
+        if($nazevtematu == '')
         {
                 unset($nazevtematu);
         }
@@ -61,7 +42,7 @@ if(isset($_POST['submit'])){
         if(mysql_num_rows($q1)==1){
             exit("Název tématu je obsazený zkus jiný");
         } else {
-            $q2= mysql_query("INSERT INTO `topic` (`nazevtematu`,`popisek`) VALUES('".$nazevtematu."'.'".$popisek."') ");
+            $q2= mysql_query("INSERT INTO `topic` (`name`,`description`) VALUES('".$nazevtematu."' , '".$popisek."') ");
             if(!$q2) {echo mysql_error() . ' - ' . mysql_errno();
         } 
         
