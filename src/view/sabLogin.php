@@ -55,7 +55,7 @@
 <!--  Do textového pole se jménem name ( name="nickname" ) nový uživatel zadá svoje nickname  -->
 
         <div>
-            <label for="e-mail">e-mail:</label>
+            <label for="e-mail">E-mail:</label>
         </div>
 
         <div>
@@ -73,13 +73,13 @@
 <!--  Do pole se jménem heslo ( name="password" ) nový uživatel zadá svoje heslo  -->
 
         <div>
-            <input type="submit" name="go" value="Ok">
+            <input type="submit" name="go" value="Registrovat">
         </div>
 <!--  tlačítko ( type="submit" ) odesíla data do souboru pridavani.php  -->
 
 </form>
 
-<div class="reg"> <a href="index.php">přihlásit se</a></div>
+<div class="reg"> <a href="index.php">Přihlásit se</a></div>
 	</div>
 </div>
 </form>
