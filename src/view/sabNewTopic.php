@@ -5,8 +5,10 @@ require_once 'sabMainPage.php';
 
 <form action="../src/controller/novetema.php" method="POST">
     Název tématu<br /><input type="text" name="nazevtematu"><br /><br />
-    Příspěvek<br />
-    <textarea action="novetema.php" rows="20" cols="80" name="prispevek"></textarea>
+    Popisek<br />
+    <textarea action="novetema.php" rows="20" cols="80" name="popisek"></textarea>
     
-    
+    <div>
+    <input type="submit" name="sub" value="Vložit">
+    </div>
 </form>
