@@ -38,7 +38,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 //V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
  echo '<span class prihl><a href="login.php">Přihlaste se</a></span>';
  
- echo '<span class="reg"><a href="registration.php">Registrace</a></span>'; 
+ 
 }
 ?>
                 <!--    <span class="link">

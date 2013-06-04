@@ -14,7 +14,7 @@
     </head>
     <body>
         <div id="hrana">
-            <strong>Toto je šablona Loginu sabLogin.php</strong>
+            
       
             <div id="wrapper">
           
