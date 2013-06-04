@@ -31,6 +31,9 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
  
  echo '         <span class="logout"><a href="../src/controller/logout.php">Logout </a></span>';
  echo '<span><a href="rozhrani.php">Uživatelské Rozhraní</a></span>';
+ echo '<span class="link">
+                        <a href="newtopic.php">Nové téma</a>
+                    </span>';
 } else {
 //V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
  echo '<span class prihl><a href="login.php">Přihlaste se</a></span>';
@@ -38,17 +41,26 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
  echo '<span class="reg"><a href="registration.php">Registrace</a></span>'; 
 }
 ?>
-                    <span class="link">
+                <!--    <span class="link">
                         <a href="newtopic.php">Nové téma</a>
-                    </span>
+                    </span> -->
                     <span><a href="/PRG3CsosJH134/web/index.php">Domů</a></span>
             
             <!-- ####################################################### -->
         </div>
-        <strong>Toto je šablona Hlavního vzhledu sabMainPage.php</strong>
+        
         
         <div id="obal">
-            
+            <?php
+            if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
+{ 
+ 
+ echo '';
+} else {
+ echo '<div id="reqLog"><center>Pro zobrazení fóra je nutné se přihlásit!</center></div>';
+ 
+}
+?>
         </div>
         
    
