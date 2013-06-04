@@ -55,7 +55,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
             if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 { 
  
- echo '';
+                require_once 'sabTemata.php';
 } else {
  echo '<div id="reqLog"><center>Pro zobrazení fóra je nutné se přihlásit!</center></div>';
  
