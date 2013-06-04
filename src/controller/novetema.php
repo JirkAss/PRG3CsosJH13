@@ -42,7 +42,7 @@ if(isset($_POST['sub'])){
         if(mysql_num_rows($q1)==1){
             exit("Název tématu je obsazený zkus jiný");
         } else {
-            $q2= mysql_query("INSERT INTO `topic` (`nazevtematu`,`popisek`) VALUES('".$nazevtematu."'.'".$popisek."') ");
+            $q2= mysql_query("INSERT INTO `topic` (`name`,`description`) VALUES('".$nazevtematu."' , '".$popisek."') ");
             if(!$q2) {echo mysql_error() . ' - ' . mysql_errno();
         } 
         
