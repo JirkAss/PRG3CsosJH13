@@ -1,25 +1,6 @@
 <?php
 
-class novetema
-{
-    private $repository;
-    private $pdo;
-    
-    public function __construct()
-    {        
-        $this->pdo    =   new \PDO(
-                                'mysql:host=localhost;dbname=forum', 
-                                'kor3k', 
-                                'y11tbJSjl', 
-                                array(
-                                        \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
-                                    )
-                               );         
-        
-        $this->repository   =   new UserRepository( $this->pdo );
-    }
-}
-if(isset($_POST['submit'])){
+if(isset($_POST['sub'])){
     
     
     
@@ -27,7 +8,7 @@ if(isset($_POST['submit'])){
          
     {
         $nazevtematu = stripslashes(htmlspecialchars(trim($_POST['nazevtematu'])));
-        if($name == '')
+        if($nazevtematu == '')
         {
                 unset($nazevtematu);
         }
