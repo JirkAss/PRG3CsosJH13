@@ -1,4 +1,5 @@
 <?php
+mb_internal_encoding("UTF-8");
 if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, jinak budete přesměrování na stránku pro registraci nového uživatele
 
     if(isset($_POST['nickname']))

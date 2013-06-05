@@ -1,5 +1,5 @@
 <?php
-
+mb_internal_encoding("UTF-8");
 if(isset($_POST['sub'])){
     
     
@@ -45,7 +45,9 @@ if(isset($_POST['sub'])){
             $q2= mysql_query("INSERT INTO `topic` (`name`,`description`) VALUES('".$nazevtematu."' , '".$popisek."') ");
             if(!$q2) {echo mysql_error() . ' - ' . mysql_errno();
         } 
-        
+         else {
+              header("Location: ".$_SERVER['SERVER_ROOT']."../../web/thxReg.php");
+         }
         }
     }
 }

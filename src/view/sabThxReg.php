@@ -7,5 +7,5 @@
         
     </head>
     <Body>
-        <h1> Děkujeme za registraci</h1>
+        <h1> Děkujeme</h1>
         <p>Budete přesměrováni automaticky<p>
