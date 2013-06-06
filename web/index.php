@@ -15,4 +15,13 @@ echo $view;
 
 
 echo '</body></html>';
+/*
+ * TODO: 
+ * Diakritika u názku témat
+ * na všech stránkách kromě indexu nezobrazovat seznam témat
+ * formátování seznamu témat
+ * Nadpis tématu v jeho souboru
+ * Mazání témat
+ * 
+ */
 ?>
