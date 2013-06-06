@@ -21,7 +21,7 @@ $view = $test->ukazMain();
 
 echo $view;
 
-
+echo "<h1>".$nazevtematu."</h1>";
 
 
 

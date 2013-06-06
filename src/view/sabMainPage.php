@@ -17,7 +17,7 @@ session_start();
     </head>
 
     <body>
-        <div id="hornilista">
+        
             <!-- ####################################################### -->
             
                     <!-- Tady budou údaje o uživateli -->
@@ -26,14 +26,8 @@ session_start();
 if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 {
 //V případě, že nejsou tak zobrazime jméno uživatele a odkaz, který je schovaný, jesli uživatel není přihlášený
- 
- echo "Ahoj <strong>".$_SESSION['nickname']."</strong>"; 
- 
- echo '         <span class="logout"><a href="../src/controller/logout.php">Logout </a></span>';
- echo '<span><a href="rozhrani.php">Uživatelské Rozhraní</a></span>';
- echo '<span class="link">
-                        <a href="newtopic.php">Nové téma</a>
-                    </span>';
+        require_once '../src/view/sabLista.php';
+
     
 } else {
 //V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
@@ -45,11 +39,10 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
                 <!--    <span class="link">
                         <a href="newtopic.php">Nové téma</a>
                     </span> -->
-                    <span><a href="/PRG3CsosJH134/web/index.php">Domů</a></span>
+                
             
             <!-- ####################################################### -->
-        </div>
-        
+              
         
         <div id="obal">
             <?php

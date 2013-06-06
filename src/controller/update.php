@@ -1,5 +1,6 @@
 <?php
-mb_internal_encoding("UTF-8");
+mb_internal_encoding( 'utf-8' );
+mb_http_output( 'utf-8' );
 require_once '../bootstrap.php';
 if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, jinak budete přesměrování na stránku pro registraci nového uživatele
 
