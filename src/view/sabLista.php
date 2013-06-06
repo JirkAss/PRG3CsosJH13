@@ -2,7 +2,7 @@
 
 //V případě, že nejsou tak zobrazime jméno uživatele a odkaz, který je schovaný, jesli uživatel není přihlášený
  
-
+echo '<link href="css/css1.css" rel="stylesheet" type="text/css" />';
  echo '<div id="hornilista">  ' ;
 
  echo "Ahoj <strong>".$_SESSION['nickname']."</strong>"; 

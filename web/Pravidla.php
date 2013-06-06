@@ -1,4 +1,5 @@
 <?php
+session_start();
 mb_internal_encoding("UTF-8");
 
 
@@ -10,18 +11,20 @@ class controller
 public $data = array("title" => ""
         
     );
-        public function ukazMain()
+        public function ukazListu()
     {
         extract($this->data);
-        require_once "../src/view/sabMainPage.php";
+        require_once "../src/view/sabLista.php";
     }
      } 
 $test =   new controller();
-$view = $test->ukazMain();
+$view = $test->ukazListu();
 
 echo $view;
 
-echo "<h1>".$nazevtematu."</h1>";
+echo "<h1>";
+echo "$nazevtematu";
+echo "</h1>";
 
 
 

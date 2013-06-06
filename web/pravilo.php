@@ -1,4 +1,5 @@
 <?php
+                 session_start();
 mb_internal_encoding("UTF-8");
 
 
@@ -13,7 +14,7 @@ public $data = array("title" => ""
         public function ukazMain()
     {
         extract($this->data);
-        require_once "../src/view/sabMainPage.php";
+        require_once "../src/view/sabLista.php";
     }
      } 
 $test =   new controller();
@@ -21,7 +22,9 @@ $view = $test->ukazMain();
 
 echo $view;
 
-
+echo "<h1>";
+echo pravilo;
+echo "</h1>";
 
 
 

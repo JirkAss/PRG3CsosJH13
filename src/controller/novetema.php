@@ -49,6 +49,7 @@ if(isset($_POST['sub'])){
          else {
               $text = 
              '<?php
+                 session_start();
 mb_internal_encoding("UTF-8");
 
 
@@ -63,7 +64,7 @@ public $data = array("title" => ""
         public function ukazMain()
     {
         extract($this->data);
-        require_once "../src/view/sabMainPage.php";
+        require_once "../src/view/sabLista.php";
     }
      } 
 $test =   new controller();
@@ -71,7 +72,9 @@ $view = $test->ukazMain();
 
 echo $view;
 
-echo "<h1>".$nazevtematu."</h1>";
+echo "<h1>";
+echo "'.$nazevtematu.'";
+echo "</h1>";
 
 
 
