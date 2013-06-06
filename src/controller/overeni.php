@@ -62,7 +62,7 @@ if(isset($_POST['go'])){
             }
         } else {
 //Jinak zobrazime hlášení
-            exit("Uživatel s tímto uživatelským jménem neexistuje.");
+            exit('Uživatel s tímto uživatelským jménem neexistuje.');
         }
     }
     

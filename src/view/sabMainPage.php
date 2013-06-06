@@ -53,6 +53,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
         
         <div id="obal">
             <?php
+            die();
             if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 { 
 require_once '../src/controller/zobraztema.php';
