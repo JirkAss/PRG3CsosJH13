@@ -5,6 +5,7 @@ class controller
     public $data = array('title' => ''
         
     );
+
     
     
     public function ukazLogin()
@@ -40,5 +41,12 @@ class controller
         extract($this->data);
         require_once '../src/view/sabNewTopic.php';
     }
+    
+      
+    
+    
 }
+
+
+
 ?>

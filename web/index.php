@@ -9,5 +9,7 @@ $test =   new controller();
 $view = $test->ukazMain();
 
 echo $view;
+
+
 echo '</body></html>';
 ?>

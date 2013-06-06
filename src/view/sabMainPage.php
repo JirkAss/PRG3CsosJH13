@@ -34,6 +34,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
  echo '<span class="link">
                         <a href="newtopic.php">Nové téma</a>
                     </span>';
+    
 } else {
 //V případě, že tyto proměnné jsou prázdne, zobrazime přihlašovací formulář a odkaz s prázdným atributem href    
  echo '<span class prihl><a href="login.php">Přihlaste se</a></span>';
@@ -54,7 +55,7 @@ if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
             <?php
             if(!empty($_SESSION['nickname']) AND !empty($_SESSION['id_user']))
 { 
- 
+
                 //require_once 'sabTemata.php';
 } else {
  echo '<div id="reqLog"><center>Pro zobrazení fóra je nutné se přihlásit!</center></div>';
