@@ -7,6 +7,7 @@ require_once'../src/model/db.php';
 $result = mysql_query('SELECT name FROM topic');
 //while ($row = mysql_fetch_assoc($result)) {$array[] = $row;} 
  while($row = mysql_fetch_assoc($result)) {
+     echo '<div id="tema"';
    echo "<br />";
    foreach($row as $_key => $_value) {
      echo '<a href="';
@@ -15,7 +16,7 @@ $result = mysql_query('SELECT name FROM topic');
      echo  '.php">';
      echo $_value;
      echo '</a>';
-     
+     echo '</div>';
 
    }}
 ?>

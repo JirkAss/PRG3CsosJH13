@@ -42,6 +42,13 @@ class controller
         require_once '../src/view/sabNewTopic.php';
     }
     
+    
+           public function ukaznewPost()
+    {
+        extract($this->data);
+        require_once '../src/view/sabNewPost.php';
+    }
+    
       
     
     
