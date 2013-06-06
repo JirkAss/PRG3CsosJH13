@@ -50,7 +50,7 @@ if(isset($_POST['sub'])){
               $text = 
              '<?php
                  session_start();
-mb_internal_encoding("UTF-8");
+
 
 
 ini_set( "mbstring.func_overload" , 3 );

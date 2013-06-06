@@ -1,8 +1,8 @@
 <?php
 
 $DBSERVER = '127.0.0.1';
-$DBUSER = 'kor3k';
-$DBPASS = 'y11tbJSjl';
+$DBUSER = 'USER';
+$DBPASS = 'PASSWORD';
 
 $DB = 'forum';
 
