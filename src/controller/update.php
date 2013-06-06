@@ -57,7 +57,7 @@ if(isset($_POST['go'])){    //jestli tlačítko bylo zmačknuté tak jdi dál, j
     else {
 //Jestli existuje tak vyvedeme hlášení
         if(mysql_num_rows($q1)==1){
-            exit("Uživatelské jméno je obsazené, vyberte si jiné");
+            exit("Uživatelské jméno je obsazené, zvolte si jiné");
         } else {
 //V případě, že není tak vložíme data o novém uživateli do databáze
             $q2 = mysql_query("UPDATE  user SET nickname = .$nickname., e-mail= .$mail. , password= .$password. WHERE 'id_user' = {$_SESSION['id_user']} ");
